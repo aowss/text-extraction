@@ -2,7 +2,7 @@ Feature: Extracting text
 
   Scenario Outline: extracting data from a proof of sustainability
     Given this proof of sustainability: <file_name>
-    When the extraction is run
+    When the extraction is run using <framework>
     Then the following data is extracted
       | grade   | trade number |
       | <grade> | <trade_id>   |

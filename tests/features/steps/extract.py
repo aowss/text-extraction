@@ -10,9 +10,12 @@ def step_impl(context, file_name):
     pass
 
 
-@when('the extraction is run')
-def step_impl(context):
-    context.result = extract_data(context.file_content)
+@when('the extraction is run using {framework}')
+def step_impl(context, framework):
+    if (framework == 'textract'):
+        context.result = extract_data(context.file_content)
+    else:
+        assert True is False
     assert True is not False
 
 
