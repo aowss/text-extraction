@@ -59,3 +59,8 @@ If you get a warning message, then you can upgrade `pip`:
 * Deactivate virtual environment
 
 > `deactivate`
+
+## Resources
+
+* The [Amazon Textract Developer Guide](https://docs.aws.amazon.com/textract/latest/dg/what-is.html)
+* A set of [Amazon Textract examples in Python](https://github.com/aws-samples/amazon-textract-code-samples/tree/master/python)
